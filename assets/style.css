@@ -1,0 +1,297 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:linear-gradient(
+        135deg,
+        #1b0036,
+        #4b0082,
+        #2b0057
+    );
+    color:white;
+}
+
+/* Background Ornament */
+
+.shape{
+    position:fixed;
+    border-radius:50%;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(10px);
+    z-index:-1;
+}
+
+.shape1{
+    width:300px;
+    height:300px;
+    top:-80px;
+    right:-80px;
+}
+
+.shape2{
+    width:400px;
+    height:400px;
+    left:-150px;
+    bottom:-150px;
+}
+
+.shape3{
+    width:180px;
+    height:180px;
+    top:40%;
+    left:45%;
+}
+
+/* Card */
+
+.glass-card{
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:20px;
+
+    padding:35px;
+
+    border:1px solid rgba(255,255,255,.1);
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,.35);
+
+    color:white;
+}
+
+/* Form */
+
+.form-control{
+
+    background:rgba(255,255,255,.12);
+
+    border:none;
+
+    color:white;
+
+    padding:12px;
+}
+
+.form-control::placeholder{
+    color:#ddd;
+}
+
+.form-control:focus{
+
+    background:rgba(255,255,255,.18);
+
+    color:white;
+
+    box-shadow:none;
+
+    border:1px solid rgba(255,255,255,.3);
+}
+
+/* Button */
+
+.btn-login{
+
+    background:
+    linear-gradient(
+    90deg,
+    #ff7b00,
+    #ff2670
+    );
+
+    border:none;
+
+    color:white;
+
+    font-weight:600;
+
+    padding:12px;
+}
+
+.btn-login:hover{
+
+    opacity:.9;
+
+    color:white;
+}
+
+.btn-register{
+
+    background:
+    linear-gradient(
+    90deg,
+    #ff7b00,
+    #ff2670
+    );
+
+    color:white;
+
+    border:none;
+
+    padding:12px 25px;
+}
+
+.btn-register:hover{
+
+    color:white;
+
+    opacity:.9;
+}
+
+/* Dashboard */
+
+.dashboard-title{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+    font-weight:bold;
+}
+
+.info-box{
+
+    background:rgba(255,255,255,.08);
+
+    border-radius:15px;
+
+    padding:20px;
+
+    text-align:center;
+
+    margin-bottom:20px;
+}
+
+.profile-icon{
+
+    width:100px;
+
+    height:100px;
+
+    background:white;
+
+    color:#4b0082;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin:auto;
+
+    font-size:40px;
+
+    font-weight:bold;
+}
+
+.table{
+
+    color:white;
+}
+
+.table td,
+.table th{
+
+    background:rgba(255,255,255,.05)!important;
+
+    color:white;
+}
+
+/* Alert */
+
+.alert{
+
+    border:none;
+}
+
+/* Logout */
+
+.btn-logout{
+
+    background:#212529;
+
+    color:white;
+}
+
+.btn-logout:hover{
+
+    background:#111;
+
+    color:white;
+}
+
+/* Delete */
+
+.btn-delete{
+
+    background:#dc3545;
+
+    color:white;
+}
+
+.btn-delete:hover{
+
+    background:#bb2d3b;
+
+    color:white;
+}
+
+/* Update */
+
+.btn-update{
+
+    background:#198754;
+
+    color:white;
+}
+
+.btn-update:hover{
+
+    background:#157347;
+
+    color:white;
+}
+
+/* Scroll */
+
+::-webkit-scrollbar{
+
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+
+    background:#2b0057;
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:#8a2be2;
+
+    border-radius:20px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .glass-card{
+
+        padding:20px;
+    }
+
+    h1{
+
+        font-size:2rem;
+    }
+}
